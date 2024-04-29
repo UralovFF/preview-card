@@ -24,7 +24,8 @@ document.body.innerHTML = `
 let mainBox = document.querySelector(".main-box");
 let box = document.querySelector(".box");
 let learning = document.querySelector(".learning");
-let date = document.querySelector(".date");''
+let date = document.querySelector(".date");
+("");
 let title = document.querySelector(".title");
 let text = document.querySelector(".text");
 let author = document.querySelector(".author");
@@ -73,5 +74,22 @@ title.onmouseover = function () {
 };
 
 title.onmouseout = function () {
-  title.setAttribute('style', 'transition: all 0.2s; margin-top: 12px; font-weight: 800; font-size: 24px; color: #111')
+  title.setAttribute(
+    "style",
+    "transition: all 0.2s; margin-top: 12px; font-weight: 800; font-size: 24px; color: #111"
+  );
+};
+
+box.onmouseover = function () {
+  box.setAttribute(
+    "style",
+    "cursor: pointer; transition: all 0.2s; width: 24rem; box-shadow: 16px 16px 0 0 #000; background: #fff; border: 1px solid #111; border-radius: 20px; padding: 24px; box-sizing: border-box;"
+  );
+};
+
+box.onmouseout = function () {
+  box.setAttribute(
+    "style",
+    "transition: all 0.5s; width: 24rem; box-shadow: 8px 8px 0 0 #000; background: #fff; border: 1px solid #111; border-radius: 20px; padding: 24px; box-sizing: border-box;"
+  );
 };
